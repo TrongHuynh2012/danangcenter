@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Nha Khoa Thẩm Mỹ DaNang Center | Bảo Tồn Răng Thật Tối Đa</title>
     <meta name="description" content="Nha khoa DaNang Center - Chuyên phục hình răng sứ không mài nhỏ, cấy ghép Implant kỹ thuật số Flapless và chỉnh nha Invisalign trả góp 0%. Đội ngũ Bác sĩ Thạc sĩ Y Dược uy tín tại Đà Nẵng.">
     <meta name="keywords" content="nha khoa da nang, boc rang su da nang, trong rang implant da nang, nieng rang da nang, nha khoa uy tin hai chau">
@@ -10,15 +10,15 @@
     <style>
         /* --- HỆ THỐNG BIẾN MÀU & ĐỊNH DẠNG CHUẨN MEDICAL CLEAN --- */
         :root {
-            --primary: #0056b3;       /* Xanh dương đậm y tế - Tạo sự tin tưởng, an tâm */
-            --secondary: #007bff;     /* Xanh dương sáng - Nhấn mạnh hành động */
-            --dark-blue: #0a2540;     /* Màu chữ tiêu đề lớn - Sang trọng, vững chãi */
-            --accent: #e6f2ff;        /* Xanh mờ nền - Dịu mắt, sạch sẽ */
-            --success: #28a745;       /* Xanh lá cam kết bảo hành */
-            --orange: #ff9800;        /* Cam cảnh báo / Highlight CTA quan trọng */
-            --text-main: #2d3748;     /* Chữ chính màu xám đen giảm mỏi mắt */
-            --text-muted: #627d98;    /* Chữ phụ, chú thích */
-            --bg-light: #f8fafc;      /* Nền sáng dịu */
+            --primary: #0056b3;       
+            --secondary: #007bff;     
+            --dark-blue: #0a2540;     
+            --accent: #e6f2ff;        
+            --success: #28a745;       
+            --orange: #ff9800;        
+            --text-main: #2d3748;     
+            --text-muted: #627d98;    
+            --bg-light: #f8fafc;      
             --bg-white: #ffffff;
             --border-color: #e2e8f0;
         }
@@ -38,10 +38,7 @@
         }
 
         /* --- TYPOGRAPHY --- */
-        h1, h2, h3, h4 {
-            color: var(--dark-blue);
-            font-weight: 700;
-        }
+        h1, h2, h3, h4 { color: var(--dark-blue); font-weight: 700; }
         h1 { font-size: 2.5rem; line-height: 1.2; }
         h2 { font-size: 2rem; position: relative; margin-bottom: 1.5rem; text-align: center; }
         h2::after {
@@ -57,767 +54,303 @@
 
         /* --- BUTTON COMPONENTS --- */
         .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 14px 30px;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 16px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            border: none;
-            text-align: center;
-            text-decoration: none;
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 14px 30px; border-radius: 8px; font-weight: bold; font-size: 16px;
+            cursor: pointer; transition: all 0.3s ease; border: none; text-align: center; text-decoration: none;
         }
-        .btn-primary {
-            background-color: var(--primary);
-            color: white;
-            box-shadow: 0 4px 14px rgba(0, 86, 179, 0.3);
-        }
-        .btn-primary:hover {
-            background-color: var(--secondary);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 86, 179, 0.4);
-        }
-        .btn-outline {
-            background-color: transparent;
-            color: var(--primary);
-            border: 2px solid var(--primary);
-        }
-        .btn-outline:hover {
-            background-color: var(--accent);
-            color: var(--dark-blue);
-        }
-        .btn-orange {
-            background-color: var(--orange);
-            color: white;
-            box-shadow: 0 4px 14px rgba(255, 152, 0, 0.3);
-        }
-        .btn-orange:hover {
-            background-color: #e68a00;
-            transform: translateY(-2px);
-        }
+        .btn-primary { background-color: var(--primary); color: white; box-shadow: 0 4px 14px rgba(0, 86, 179, 0.3); }
+        .btn-primary:hover { background-color: var(--secondary); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 86, 179, 0.4); }
+        .btn-outline { background-color: transparent; color: var(--primary); border: 2px solid var(--primary); }
+        .btn-outline:hover { background-color: var(--accent); color: var(--dark-blue); }
+        .btn-orange { background-color: var(--orange); color: white; box-shadow: 0 4px 14px rgba(255, 152, 0, 0.3); }
+        .btn-orange:hover { background-color: #e68a00; transform: translateY(-2px); }
 
         /* --- HEADER --- */
         header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 5%;
-            background: var(--bg-white);
-            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 999;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 5%; background: var(--bg-white); box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 999;
         }
-        .logo-area {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: var(--primary);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-        }
-        .logo-text {
-            font-size: 22px;
-            font-weight: 800;
-            color: var(--primary);
-            letter-spacing: 0.5px;
-        }
-        .logo-text span {
-            color: var(--dark-blue);
-            font-weight: 400;
-            font-size: 14px;
-            display: block;
-            margin-top: -4px;
-            letter-spacing: 1px;
-        }
-        nav {
-            display: flex;
-            gap: 25px;
-        }
-        nav a {
-            color: var(--text-main);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 15px;
-            transition: color 0.2s;
-        }
-        nav a:hover {
-            color: var(--primary);
-        }
+        .logo-area { display: flex; align-items: center; gap: 10px; }
+        .logo-icon { width: 40px; height: 40px; background: var(--primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 20px; }
+        .logo-text { font-size: 22px; font-weight: 800; color: var(--primary); letter-spacing: 0.5px; line-height: 1.2; }
+        .logo-text span { color: var(--dark-blue); font-weight: 400; font-size: 12px; display: block; letter-spacing: 0.5px; }
+        nav { display: flex; gap: 25px; }
+        nav a { color: var(--text-main); text-decoration: none; font-weight: 600; font-size: 15px; transition: color 0.2s; }
+        nav a:hover { color: var(--primary); }
 
         /* --- HERO SECTION --- */
         .hero {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 80px 5%;
-            background: linear-gradient(135deg, var(--accent) 0%, #f0f7ff 100%);
-            overflow: hidden;
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 80px 5%; background: linear-gradient(135deg, var(--accent) 0%, #f0f7ff 100%); overflow: hidden;
         }
-        .hero-content {
-            flex: 1;
-            padding-right: 60px;
-        }
-        .hero h1 {
-            margin-bottom: 20px;
-        }
-        .hero h1 span {
-            color: var(--secondary);
-        }
-        .hero p {
-            font-size: 17px;
-            color: var(--text-main);
-            margin-bottom: 35px;
-            text-align: justify;
-        }
-        .hero-cta-group {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-        .hero-image-area {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            position: relative;
-        }
+        .hero-content { flex: 1; padding-right: 60px; }
+        .hero h1 { margin-bottom: 20px; }
+        .hero h1 span { color: var(--secondary); }
+        .hero p { font-size: 17px; color: var(--text-main); margin-bottom: 35px; text-align: justify; }
+        .hero-cta-group { display: flex; gap: 15px; flex-wrap: wrap; }
+        .hero-image-area { flex: 1; display: flex; justify-content: center; position: relative; }
         .hero-svg-placeholder {
-            width: 100%;
-            max-width: 520px;
-            height: 380px;
-            background: var(--bg-white);
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(10,37,64,0.08);
-            border: 4px solid white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: var(--primary);
-            text-align: center;
-            padding: 20px;
+            width: 100%; max-width: 520px; height: 380px; background: var(--bg-white); border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(10,37,64,0.08); border: 4px solid white; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; color: var(--primary); text-align: center; padding: 20px;
         }
 
         /* --- SECTION GENERIC --- */
-        .section {
-            padding: 80px 5%;
-        }
-        .bg-light-sec {
-            background-color: rgba(230, 242, 255, 0.4);
-        }
+        .section { padding: 80px 5%; }
+        .bg-light-sec { background-color: rgba(230, 242, 255, 0.4); }
 
         /* --- STEP BY STEP CLINICAL JOURNEY --- */
-        .journey-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 25px;
-            margin-top: 40px;
-        }
-        .journey-card {
-            background: var(--bg-white);
-            padding: 30px 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
-            border-top: 5px solid var(--primary);
-            position: relative;
-            transition: transform 0.3s ease;
-        }
-        .journey-card:hover {
-            transform: translateY(-5px);
-        }
-        .step-num {
-            position: absolute;
-            top: -20px;
-            left: 20px;
-            width: 40px;
-            height: 40px;
-            background: var(--dark-blue);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 14px;
-        }
-        .step-time {
-            font-size: 12px;
-            font-weight: 700;
-            color: var(--orange);
-            text-transform: uppercase;
-            margin-top: 10px;
-            display: block;
-        }
-        .journey-card p {
-            font-size: 14px;
-            color: var(--text-muted);
-            margin-top: 10px;
-            text-align: justify;
-        }
+        .journey-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; margin-top: 40px; }
+        .journey-card { background: var(--bg-white); padding: 30px 20px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); border-top: 5px solid var(--primary); position: relative; transition: transform 0.3s ease; }
+        .journey-card:hover { transform: translateY(-5px); }
+        .step-num { position: absolute; top: -20px; left: 20px; width: 40px; height: 40px; background: var(--dark-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 14px; }
+        .step-time { font-size: 12px; font-weight: 700; color: var(--orange); text-transform: uppercase; margin-top: 10px; display: block; }
+        .journey-card p { font-size: 14px; color: var(--text-muted); margin-top: 10px; text-align: justify; }
 
         /* --- DETAILED SERVICES --- */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 40px;
-        }
-        .service-card {
-            background: var(--bg-white);
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
-            border: 1px solid var(--border-color);
-            padding: 35px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            transition: all 0.3s ease;
-        }
-        .service-card:hover {
-            box-shadow: 0 15px 35px rgba(0,86,179,0.1);
-            border-color: var(--secondary);
-        }
-        .service-header {
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 2px dashed var(--accent);
-        }
-        .service-tag {
-            font-size: 11px;
-            text-transform: uppercase;
-            background: var(--accent);
-            color: var(--primary);
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-weight: 700;
-            display: inline-block;
-            margin-bottom: 8px;
-        }
-        .service-info-list {
-            list-style: none;
-            margin-bottom: 30px;
-        }
-        .service-info-list li {
-            font-size: 14.5px;
-            margin-bottom: 15px;
-            padding-left: 24px;
-            position: relative;
-            color: var(--text-main);
-        }
-        .service-info-list li::before {
-            content: '✓';
-            color: var(--success);
-            font-weight: 900;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-        .service-info-list li strong {
-            color: var(--dark-blue);
-            display: block;
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 2px;
-        }
+        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; }
+        .service-card { background: var(--bg-white); border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.04); border: 1px solid var(--border-color); padding: 35px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; }
+        .service-card:hover { box-shadow: 0 15px 35px rgba(0,86,179,0.1); border-color: var(--secondary); }
+        .service-header { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 2px dashed var(--accent); }
+        .service-tag { font-size: 11px; text-transform: uppercase; background: var(--accent); color: var(--primary); padding: 4px 10px; border-radius: 4px; font-weight: 700; display: inline-block; margin-bottom: 8px; }
+        .service-info-list { list-style: none; margin-bottom: 30px; }
+        .service-info-list li { font-size: 14.5px; margin-bottom: 15px; padding-left: 24px; position: relative; color: var(--text-main); }
+        .service-info-list li::before { content: '✓'; color: var(--success); font-weight: 900; position: absolute; left: 0; top: 0; }
+        .service-info-list li strong { color: var(--dark-blue); display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 2px; }
 
         /* --- TRUST SIGNALS & ABOUT US --- */
-        .trust-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-        .trust-content-box h2 {
-            text-align: left;
-        }
-        .trust-content-box h2::after {
-            margin: 10px 0 0 0;
-        }
-        .trust-text {
-            font-size: 16px;
-            color: var(--text-main);
-            margin: 25px 0;
-            text-align: justify;
-        }
-        .badge-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-        .badge-item {
-            background: var(--bg-light);
-            border-left: 4px solid var(--primary);
-            padding: 12px 15px;
-            border-radius: 0 8px 8px 0;
-            font-size: 13.5px;
-            font-weight: 600;
-            color: var(--dark-blue);
-        }
-        .trust-graphic {
-            background: linear-gradient(45deg, var(--primary), var(--secondary));
-            height: 420px;
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            padding: 40px;
-            text-align: center;
-            box-shadow: 0 15px 35px rgba(0, 86, 179, 0.15);
-        }
-        .graphic-icon {
-            font-size: 50px;
-            margin-bottom: 15px;
-        }
+        .trust-section { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .trust-content-box h2 { text-align: left; }
+        .trust-content-box h2::after { margin: 10px 0 0 0; }
+        .trust-text { font-size: 16px; color: var(--text-main); margin: 25px 0; text-align: justify; }
+        .badge-container { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .badge-item { background: var(--bg-light); border-left: 4px solid var(--primary); padding: 12px 15px; border-radius: 0 8px 8px 0; font-size: 13.5px; font-weight: 600; color: var(--dark-blue); }
+        .trust-graphic { background: linear-gradient(45deg, var(--primary), var(--secondary)); height: 420px; border-radius: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; padding: 40px; text-align: center; box-shadow: 0 15px 35px rgba(0, 86, 179, 0.15); }
+        .graphic-icon { font-size: 50px; margin-bottom: 15px; }
 
         /* --- CLINICAL CASE STUDIES TABLE --- */
-        .table-container {
-            overflow-x: auto;
-            margin-top: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 25px rgba(0,0,0,0.04);
-            border: 1px solid var(--border-color);
-        }
-        .case-table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-            font-size: 14.5px;
-            background: white;
-        }
-        .case-table th {
-            background-color: var(--dark-blue);
-            color: white;
-            padding: 16px 20px;
-            font-weight: 600;
-        }
-        .case-table td {
-            padding: 16px 20px;
-            border-bottom: 1px solid var(--border-color);
-            vertical-align: top;
-        }
-        .case-table tr:nth-child(even) {
-            background-color: var(--bg-light);
-        }
-        .case-id {
-            font-weight: 700;
-            color: var(--primary);
-            background: var(--accent);
-            padding: 4px 8px;
-            border-radius: 4px;
-            display: inline-block;
-        }
+        .table-container { overflow-x: auto; margin-top: 30px; border-radius: 12px; box-shadow: 0 4px 25px rgba(0,0,0,0.04); border: 1px solid var(--border-color); -webkit-overflow-scrolling: touch; }
+        .case-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 14.5px; background: white; min-width: 600px; }
+        .case-table th { background-color: var(--dark-blue); color: white; padding: 16px 20px; font-weight: 600; }
+        .case-table td { padding: 16px 20px; border-bottom: 1px solid var(--border-color); vertical-align: top; }
+        .case-table tr:nth-child(even) { background-color: var(--bg-light); }
+        .case-id { font-weight: 700; color: var(--primary); background: var(--accent); padding: 4px 8px; border-radius: 4px; display: inline-block; }
 
         /* --- LEAD MAGNET / NEWSLETTER --- */
-        .lead-magnet-banner {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--dark-blue) 100%);
-            color: white;
-            padding: 50px;
-            border-radius: 16px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0,56,179,0.2);
-            margin-top: 40px;
-        }
-        .lead-magnet-banner h2 {
-            color: white;
-        }
-        .lead-magnet-banner h2::after {
-            background: var(--orange);
-        }
-        .lead-magnet-banner p {
-            max-width: 650px;
-            margin: 20px auto 30px;
-            font-size: 16px;
-            opacity: 0.9;
-        }
-        .lead-form {
-            display: flex;
-            max-width: 600px;
-            margin: 0 auto;
-            gap: 10px;
-        }
-        .lead-input {
-            flex: 1;
-            padding: 15px 20px;
-            border-radius: 8px;
-            border: none;
-            outline: none;
-            font-size: 16px;
-        }
+        .lead-magnet-banner { background: linear-gradient(135deg, var(--primary) 0%, var(--dark-blue) 100%); color: white; padding: 50px; border-radius: 16px; text-align: center; box-shadow: 0 10px 30px rgba(0,56,179,0.2); margin-top: 40px; }
+        .lead-magnet-banner h2 { color: white; }
+        .lead-magnet-banner h2::after { background: var(--orange); }
+        .lead-magnet-banner p { max-width: 650px; margin: 20px auto 30px; font-size: 16px; opacity: 0.9; }
+        .lead-form { display: flex; max-width: 600px; margin: 0 auto; gap: 10px; }
+        .lead-input { flex: 1; padding: 15px 20px; border-radius: 8px; border: none; outline: none; font-size: 16px; }
 
         /* --- LOCAL SEO FOOTER --- */
-        footer {
-            background-color: #0f172a;
-            color: #94a3b8;
-            padding: 70px 5% 30px;
-            font-size: 14px;
-            border-top: 5px solid var(--primary);
-        }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1.2fr 1fr 1fr;
-            gap: 50px;
-            margin-bottom: 40px;
-        }
-        .footer-col h3 {
-            color: white;
-            font-size: 18px;
-            margin-bottom: 20px;
-            border-left: 3px solid var(--secondary);
-            padding-left: 10px;
-        }
-        .footer-col ul {
-            list-style: none;
-        }
-        .footer-col ul li {
-            margin-bottom: 12px;
-        }
-        .footer-col ul li a {
-            color: #94a3b8;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        .footer-col ul li a:hover {
-            color: white;
-            padding-left: 2px;
-        }
-        .footer-info-item {
-            margin-bottom: 12px;
-            line-height: 1.5;
-        }
-        .footer-info-item strong {
-            color: white;
-        }
-        .copyright-bar {
-            text-align: center;
-            padding-top: 25px;
-            border-top: 1px solid #1e293b;
-            font-size: 13px;
-        }
+        footer { background-color: #0f172a; color: #94a3b8; padding: 70px 5% 30px; font-size: 14px; border-top: 5px solid var(--primary); }
+        .footer-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 50px; margin-bottom: 40px; }
+        .footer-col h3 { color: white; font-size: 18px; margin-bottom: 20px; border-left: 3px solid var(--secondary); padding-left: 10px; }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 12px; }
+        .footer-col ul li a { color: #94a3b8; text-decoration: none; transition: color 0.2s; }
+        .footer-col ul li a:hover { color: white; padding-left: 2px; }
+        .footer-info-item { margin-bottom: 12px; line-height: 1.5; }
+        .footer-info-item strong { color: white; }
+        .copyright-bar { text-align: center; padding-top: 25px; border-top: 1px solid #1e293b; font-size: 13px; }
 
         /* --- INTERACTIVE FLOATING WIDGETS --- */
-        .floating-controls {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            z-index: 1000;
-        }
-        .float-btn {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 11px;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            transition: all 0.3s ease;
-            text-align: center;
-            line-height: 1.2;
-        }
-        .float-btn:hover {
-            transform: scale(1.1);
-        }
-        .float-booking {
-            background-color: var(--orange);
-        }
-        .float-chat {
-            background-color: var(--primary);
-        }
+        .floating-controls { position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column; gap: 15px; z-index: 1000; }
+        .float-btn { width: 60px; height: 60px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 11px; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: all 0.3s ease; text-align: center; line-height: 1.2; }
+        .float-btn:hover { transform: scale(1.1); }
+        .float-booking { background-color: var(--orange); }
+        .float-chat { background-color: var(--primary); }
 
-        /* --- MODAL WINDOW SIMULATIONS (UX INTERACTIVE) --- */
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(4px);
-            z-index: 10000;
-            display: none;
-            align-items: center;
-            justify-content: center;
-        }
-        .modal-box {
-            background: white;
-            padding: 35px;
-            border-radius: 16px;
-            width: 100%;
-            max-width: 500px;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
-            position: relative;
-        }
-        .close-modal {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 24px;
-            cursor: pointer;
-            color: var(--text-muted);
-        }
-        .form-group {
-            margin-bottom: 18px;
-        }
-        .form-group label {
-            display: block;
-            font-size: 13.5px;
-            font-weight: 600;
-            margin-bottom: 6px;
-            color: var(--dark-blue);
-        }
-        .form-control {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            outline: none;
-            font-size: 14.5px;
-        }
-        .form-control:focus {
-            border-color: var(--primary);
-        }
+        /* --- MODAL WINDOW SIMULATIONS --- */
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(4px); z-index: 10000; display: none; align-items: center; justify-content: center; padding: 15px; }
+        .modal-box { background: white; padding: 35px; border-radius: 16px; width: 100%; max-width: 500px; box-shadow: 0 25px 50px rgba(0,0,0,0.15); position: relative; max-height: 90vh; overflow-y: auto; }
+        .close-modal { position: absolute; top: 15px; right: 20px; font-size: 24px; cursor: pointer; color: var(--text-muted); }
+        .form-group { margin-bottom: 18px; }
+        .form-group label { display: block; font-size: 13.5px; font-weight: 600; margin-bottom: 6px; color: var(--dark-blue); }
+        .form-control { width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 6px; outline: none; font-size: 14.5px; }
+        .form-control:focus { border-color: var(--primary); }
 
         /* --- LIVE CHOTBOT INTERACTIVE WINDOW --- */
-        .chatbot-window {
-            position: fixed;
-            bottom: 105px;
-            right: 30px;
-            width: 360px;
-            height: 460px;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-            z-index: 1001;
-            display: none;
-            flex-direction: column;
-            border: 1px solid var(--border-color);
-            overflow: hidden;
-        }
-        .chat-header {
-            background: var(--primary);
-            color: white;
-            padding: 15px;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .chat-body {
-            flex: 1;
-            padding: 15px;
-            overflow-y: auto;
-            background: #f8fafc;
-            font-size: 14px;
-        }
-        .chat-msg {
-            margin-bottom: 12px;
-            max-width: 85%;
-            padding: 10px 14px;
-            border-radius: 12px;
-        }
-        .msg-bot {
-            background: white;
-            color: var(--text-main);
-            border-bottom-left-radius: 2px;
-            border: 1px solid var(--border-color);
-        }
-        .msg-user {
-            background: var(--primary);
-            color: white;
-            margin-left: auto;
-            border-bottom-right-radius: 2px;
-        }
-        .chat-options {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            margin-top: 10px;
-        }
-        .chat-opt-btn {
-            background: var(--accent);
-            color: var(--primary);
-            border: 1px solid rgba(0,86,179,0.2);
-            padding: 8px 12px;
-            border-radius: 6px;
-            text-align: left;
-            cursor: pointer;
-            font-size: 13px;
-            font-weight: 600;
-            transition: background 0.2s;
-        }
-        .chat-opt-btn:hover {
-            background: #d0e7ff;
-        }
+        .chatbot-window { position: fixed; bottom: 105px; right: 30px; width: 360px; max-width: calc(100vw - 30px); height: 460px; background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); z-index: 1001; display: none; flex-direction: column; border: 1px solid var(--border-color); overflow: hidden; }
+        .chat-header { background: var(--primary); color: white; padding: 15px; font-weight: bold; display: flex; justify-content: space-between; align-items: center; }
+        .chat-body { flex: 1; padding: 15px; overflow-y: auto; background: #f8fafc; font-size: 14px; }
+        .chat-msg { margin-bottom: 12px; max-width: 85%; padding: 10px 14px; border-radius: 12px; }
+        .msg-bot { background: white; color: var(--text-main); border-bottom-left-radius: 2px; border: 1px solid var(--border-color); }
+        .msg-user { background: var(--primary); color: white; margin-left: auto; border-bottom-right-radius: 2px; }
+        .chat-options { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+        .chat-opt-btn { background: var(--accent); color: var(--primary); border: 1px solid rgba(0,86,179,0.2); padding: 8px 12px; border-radius: 6px; text-align: left; cursor: pointer; font-size: 13px; font-weight: 600; transition: background 0.2s; }
+        .chat-opt-btn:hover { background: #d0e7ff; }
 
-        /* --- RESPONSIVE LAYOUTS --- */
-        @media (max-width: 1024px) {
-            .journey-grid { grid-template-columns: repeat(2, 1fr); gap: 35px 20px; }
-            .services-grid { grid-template-columns: repeat(2, 1fr); }
-        }
+        /* =========================================================
+           📱 TỐI ƯU HÓA HOÀN TOÀN CHO MOBILE (RESPONSIVE) 📱 
+           ========================================================= */
         @media (max-width: 768px) {
-            header { padding: 15px 20px; }
+            /* Layout chung & Spacing */
+            .section { padding: 40px 15px; }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+            
+            /* Header / Menu */
+            header { padding: 12px 15px; flex-wrap: wrap; }
             nav { display: none; }
-            .hero { flex-direction: column; text-align: center; padding: 50px 20px; }
-            .hero-content { padding-right: 0; margin-bottom: 40px; }
-            .hero h1 { font-size: 2rem; }
-            .hero-cta-group { justify-content: center; }
-            .services-grid { grid-template-columns: 1fr; }
+            .logo-text { font-size: 18px; }
+            .logo-text span { font-size: 11px; }
+            header .btn { padding: 10px 15px; font-size: 14px; width: 100%; margin-top: 15px; }
+
+            /* Hero Banner */
+            .hero { flex-direction: column; text-align: center; padding: 40px 15px; }
+            .hero-content { padding-right: 0; margin-bottom: 30px; }
+            .hero p { text-align: center; font-size: 15px; margin-bottom: 25px; }
+            .hero-cta-group { flex-direction: column; gap: 10px; }
+            .hero-cta-group .btn { width: 100%; }
+            .hero-image-area { width: 100%; }
+            .hero-svg-placeholder { height: 280px; padding: 15px; }
+
+            /* Grid Layouts chuyển về 1 cột */
+            .journey-grid { grid-template-columns: 1fr; gap: 20px; }
+            .services-grid { grid-template-columns: 1fr; gap: 25px; margin-top: 25px; }
+            .service-card { padding: 25px 20px; }
+            .service-card .btn { width: 100%; }
+            
+            /* Trust Section */
             .trust-section { grid-template-columns: 1fr; gap: 30px; }
-            .footer-grid { grid-template-columns: 1fr; gap: 30px; }
-            .lead-form { flex-direction: column; }
+            .trust-content-box h2 { text-align: center; }
+            .trust-content-box h2::after { margin: 10px auto 0; }
+            .trust-text { text-align: left; font-size: 15px; }
+            .badge-container { grid-template-columns: 1fr; gap: 10px; }
+            .trust-graphic { height: auto; padding: 30px 20px; }
+
+            /* Bảng Giá / Case Studies */
+            .table-container { margin-top: 20px; }
+            .case-table th, .case-table td { padding: 12px; font-size: 13.5px; }
+
+            /* Lead Magnet Banner */
+            .lead-magnet-banner { padding: 30px 20px; margin-top: 20px; }
+            .lead-magnet-banner p { font-size: 14.5px; }
+            .lead-form { flex-direction: column; gap: 12px; }
+            .lead-form .btn { width: 100%; padding: 15px 0; }
+
+            /* Footer */
+            footer { padding: 40px 15px 25px; }
+            .footer-grid { grid-template-columns: 1fr; gap: 30px; margin-bottom: 25px; }
+            .footer-col h3 { font-size: 16px; margin-bottom: 15px; }
+
+            /* Buttons Nổi & Modal */
+            .floating-controls { bottom: 15px; right: 15px; gap: 10px; }
+            .float-btn { width: 50px; height: 50px; font-size: 9px; }
+            
+            .modal-box { padding: 25px 20px; width: 100%; }
+            .close-modal { top: 10px; right: 15px; }
+            
+            .chatbot-window { bottom: 75px; right: 15px; height: 60vh; min-height: 400px; width: calc(100vw - 30px); }
         }
     </style>
 </head>
 <body>
 
-    <!-- THÀNH PHẦN: HEADER TIÊU CHUẨN -->
     <header>
         <div class="logo-area">
             <div class="logo-icon">DN</div>
             <div class="logo-text">DaNang Center<span>NHA KHOA THẨM MỸ QUỐC TẾ</span></div>
         </div>
         <nav>
-            <a href="#journey">Quy Trình Lâm Sàng</a>
-            <a href="#services">Dịch Vụ Chuyên Sâu</a>
-            <a href="#trust">Câu Chuyện Uy Tín</a>
-            <a href="#cases">Ca Lâm Sàng</a>
+            <a href="#journey">Quy Trình</a>
+            <a href="#services">Dịch Vụ</a>
+            <a href="#trust">Uy Tín</a>
+            <a href="#cases">Khách Hàng</a>
         </nav>
         <button class="btn btn-primary" onclick="openBookingModal()">Đặt Lịch Khám</button>
     </header>
 
-    <!-- THÀNH PHẦN 1: HERO SECTION ĐÁNH VÀO MONG VUỐN & KHẮC PHỤC NỖI ĐAU -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Tự Tin Với Nụ Cười Mới Chỉ Sau <span>3 Buổi Hẹn</span> Tại DaNang Center</h1>
-            <p>Hệ thống nha khoa thẩm mỹ áp dụng công nghệ <strong>Bảo tồn răng thật tối đa – Không mài nhỏ – Không diệt tủy</strong>. Kiến tạo form răng chuẩn tỷ lệ nhân trắc học bởi đội ngũ Bác sĩ Thạc sĩ Y Dược trực tiếp chẩn đoán và điều trị, đảm bảo chức năng ăn nhai trọn đời mà không gây ê buốt sinh lý.</p>
+            <h1>Tự Tin Nụ Cười Mới Chỉ Sau <span>3 Buổi Hẹn</span> Tại DaNang Center</h1>
+            <p>Hệ thống nha khoa thẩm mỹ áp dụng công nghệ <strong>Bảo tồn răng thật tối đa – Không mài nhỏ – Không diệt tủy</strong>. Kiến tạo form răng chuẩn tỷ lệ bởi đội ngũ Thạc sĩ Y Dược trực tiếp điều trị, đảm bảo chức năng ăn nhai trọn đời.</p>
             <div class="hero-cta-group">
-                <button class="btn btn-orange" onclick="openBookingModal()">Nhận Phác Đồ Thiết Kế 3D Miễn Phí</button>
-                <button class="btn btn-outline" onclick="toggleChatbot()">Kiểm Tra Răng & Tính Chi Phí Online</button>
+                <button class="btn btn-orange" onclick="openBookingModal()">Nhận Phác Đồ 3D Miễn Phí</button>
+                <button class="btn btn-outline" onclick="toggleChatbot()">Tính Chi Phí Online</button>
             </div>
         </div>
         <div class="hero-image-area">
             <div class="hero-svg-placeholder">
-                <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
                     <line x1="9" y1="9" x2="9.01" y2="9"/>
                     <line x1="15" y1="9" x2="15.01" y2="9"/>
                 </svg>
                 <h4 style="margin-top:15px; color:var(--dark-blue)">Số Hóa Quy Trình Thẩm Mỹ</h4>
-                <p style="font-size:13px; margin-bottom:0; text-align:center; padding:0 20px;">Xem trước kết quả dáng răng tương thích khuôn mặt bằng công nghệ Smile Design AI.</p>
+                <p style="font-size:13px; margin-bottom:0; text-align:center; padding:0 10px;">Xem trước kết quả dáng răng bằng công nghệ Smile Design AI.</p>
             </div>
         </div>
     </section>
 
-    <!-- THÀNH PHẦN 1: HÀNH TRÌNH KHÁCH HÀNG (STEP-BY-STEP LÂM SÀNG) -->
     <section class="section" id="journey">
         <h2>Hành Trình Tỏa Sáng Chuẩn Y Khoa</h2>
         <div class="journey-grid">
             <div class="journey-card">
                 <div class="step-num">01</div>
-                <h3>Khám Số Hóa & Chụp Phim 3D</h3>
+                <h3>Khám Số Hóa & Chụp Phim</h3>
                 <span class="step-time">Buổi 1 - 30 phút</span>
-                <p>Khảo sát cấu trúc xương hàm toàn diện bằng phim CT Cone Beam 3D và quét mẫu hàm số hóa bằng máy iTero Element 5D giúp phát hiện sớm các bệnh lý nền ẩn sâu dưới chân răng.</p>
+                <p>Khảo sát cấu trúc xương hàm toàn diện bằng CT Cone Beam 3D và quét mẫu hàm số hóa bằng máy iTero Element 5D.</p>
             </div>
             <div class="journey-card">
                 <div class="step-num">02</div>
-                <h3>Thiết Kế Nụ Cười (Smile Design)</h3>
+                <h3>Thiết Kế Nụ Cười AI</h3>
                 <span class="step-time">Buổi 1 - 20 phút</span>
-                <p>Ứng dụng AI phân tích đường cười, tỷ lệ môi - răng - nướu. Khách hàng trực tiếp xem trước kết quả giả lập diện mạo nụ cười, chủ động chọn form răng và sắc độ răng cùng bác sĩ.</p>
+                <p>Khách hàng xem trước kết quả giả lập diện mạo nụ cười, chủ động chọn form răng và sắc độ cùng bác sĩ chuyên môn.</p>
             </div>
             <div class="journey-card">
                 <div class="step-num">03</div>
-                <h3>Can Thiệp Tối Thiểu & Chế Tác</h3>
-                <span class="step-time">Buổi 2 - 60-90 phút</span>
-                <p>Sửa soạn mô răng sinh lý đạt tỷ lệ cực vi phẫu chỉ từ 0.3mm - 0.5mm, bảo tồn tủy sống tuyệt đối. Răng sứ cao cấp được tiện nguyên khối tự động qua hệ thống CAD/CAM chính xác micron.</p>
+                <h3>Can Thiệp Tối Thiểu</h3>
+                <span class="step-time">Buổi 2 - 60 phút</span>
+                <p>Sửa soạn mô răng sinh lý tỷ lệ cực vi phẫu chỉ từ 0.3mm - 0.5mm. Răng sứ cao cấp được tiện nguyên khối tự động.</p>
             </div>
             <div class="journey-card">
                 <div class="step-num">04</div>
-                <h3>Lắp Răng & Khóa Khớp Cắn</h3>
+                <h3>Lắp Răng & Khóa Khớp</h3>
                 <span class="step-time">Buổi 3 - 45 phút</span>
-                <p>Bác sĩ tiến hành gắn răng, cân chỉnh khớp cắn động đa hướng để tối ưu hóa lực nhai cơ học, loại bỏ nguy cơ sang chấn khớp thái dương. Bàn giao thẻ bảo hành thông minh có mã định danh.</p>
+                <p>Bác sĩ tiến hành gắn răng, cân chỉnh khớp cắn động đa hướng để tối ưu hóa lực nhai cơ học. Bàn giao thẻ bảo hành.</p>
             </div>
         </div>
     </section>
 
-    <!-- THÀNH PHẦN 1: TRANG DỊCH VỤ CHI TIẾT (KHÔNG CHỈ VIẾT GIÁ) -->
     <section class="section bg-light-sec" id="services">
-        <h2>Giải Pháp Điều Trị Chuyên Sâu Tối Ưu</h2>
+        <h2>Giải Pháp Điều Trị Chuyên Sâu</h2>
         <div class="services-grid">
-            
-            <!-- Dịch vụ 1 -->
             <div class="service-card">
                 <div>
                     <div class="service-header">
                         <span class="service-tag">Thẩm Mỹ Răng Sứ</span>
-                        <h3>Phục Hình Sứ & Veneer Ultra-Thin</h3>
+                        <h3>Phục Hình Sứ Ultra-Thin</h3>
                     </div>
                     <ul class="service-info-list">
-                        <li>
-                            <strong>Chỉ định y khoa thích hợp:</strong>
-                            Răng nhiễm kháng sinh (Tetracycline) độ nặng, thiểu sản men răng, sứt mẻ lớn, hình thể răng ngắn, thưa hở kẽ bẩm sinh.
-                        </li>
-                        <li>
-                            <strong>Thời gian điều trị lâm sàng:</strong>
-                            Hoàn thành từ 2 - 3 buổi hẹn (Tương đương 3 - 5 ngày chế tác Labo).
-                        </li>
-                        <li>
-                            <strong>Chính sách cam kết & Bảo hành:</strong>
-                            Bảo hành điện tử chính hãng từ 10 năm đến trọn đời đối với phôi sứ cao cấp (Zirconia DDBio Đức, Cercon HT, Emax). Cam kết không viêm lợi, không hôi miệng.
-                        </li>
+                        <li><strong>Chỉ định y khoa:</strong> Răng nhiễm kháng sinh, thiểu sản men, sứt mẻ, hình thể ngắn, thưa hở kẽ.</li>
+                        <li><strong>Thời gian điều trị:</strong> Hoàn thành từ 2 - 3 buổi hẹn (3 - 5 ngày chế tác).</li>
+                        <li><strong>Bảo hành:</strong> Bảo hành điện tử từ 10 năm đến trọn đời đối với phôi sứ cao cấp.</li>
                     </ul>
                 </div>
                 <button class="btn btn-outline" onclick="openBookingModal()">Nhận Báo Giá Chi Tiết</button>
             </div>
 
-            <!-- Dịch vụ 2 -->
             <div class="service-card">
                 <div>
                     <div class="service-header">
                         <span class="service-tag">Trồng Răng Giả</span>
-                        <h3>Cấy Ghép Implant Kỹ Thuật Số</h3>
+                        <h3>Cấy Ghép Implant KTS</h3>
                     </div>
                     <ul class="service-info-list">
-                        <li>
-                            <strong>Chỉ định y khoa thích hợp:</strong>
-                            Mất một răng đơn lẻ, mất nhiều răng xen kẽ hoặc mất răng toàn hàm lâu năm dẫn đến tiêu xương hàm, lão hóa cơ mặt, má hóp sâu.
-                        </li>
-                        <li>
-                            <strong>Thời gian điều trị lâm sàng:</strong>
-                            3 - 6 tháng để tích hợp xương hoàn toàn (Kỹ thuật phẫu thuật mút lợi Flapless không rạch vạt chỉ mất 15 phút đặt trụ).
-                        </li>
-                        <li>
-                            <strong>Chính sách cam kết & Bảo hành:</strong>
-                            Tỷ lệ tích hợp thành công đạt 99.8%. Bảo hành trọn đời toàn bộ trụ Implant nhập khẩu trực tiếp (Straumann Thụy Sĩ, Tekka Pháp).
-                        </li>
+                        <li><strong>Chỉ định y khoa:</strong> Mất răng đơn lẻ, mất răng toàn hàm gây tiêu xương, lão hóa cơ mặt.</li>
+                        <li><strong>Thời gian điều trị:</strong> 15 phút đặt trụ, 3-6 tháng tích hợp xương (Không rạch vạt).</li>
+                        <li><strong>Bảo hành:</strong> Bảo hành trọn đời toàn bộ trụ Implant nhập khẩu trực tiếp.</li>
                     </ul>
                 </div>
                 <button class="btn btn-outline" onclick="openBookingModal()">Nhận Báo Giá Chi Tiết</button>
             </div>
 
-            <!-- Dịch vụ 3 -->
             <div class="service-card">
                 <div>
                     <div class="service-header">
@@ -825,39 +358,26 @@
                         <h3>Niềng Răng Toàn Diện AI</h3>
                     </div>
                     <ul class="service-info-list">
-                        <li>
-                            <strong>Chỉ định y khoa thích hợp:</strong>
-                            Răng hô xòe, móm ngược cấu trúc, răng chen chúc khấp khểnh nghiêm trọng, sai lệch khớp cắn sâu/hở gây cản trở ăn nhai.
-                        </li>
-                        <li>
-                            <strong>Thời gian điều trị lâm sàng:</strong>
-                            Thời gian dao động từ 12 - 24 tháng (Tính toán lộ trình di chuyển răng chính xác từng tuần bằng phần mềm ClinCheck).
-                        </li>
-                        <li>
-                            <strong>Chính sách cam kết & Bảo hành:</strong>
-                            Ký hợp đồng bảo đảm hiệu quả bằng văn bản pháp lý trước khi gắn mắc cài / nhận khay Invisalign. Hỗ trợ trả góp 0% lãi suất.
-                        </li>
+                        <li><strong>Chỉ định y khoa:</strong> Răng hô xòe, móm ngược, khấp khểnh, sai lệch khớp cắn sâu/hở.</li>
+                        <li><strong>Thời gian điều trị:</strong> 12 - 24 tháng với phác đồ dịch chuyển chính xác.</li>
+                        <li><strong>Bảo hành:</strong> Ký hợp đồng cam kết hiệu quả. Trả góp 0% lãi suất.</li>
                     </ul>
                 </div>
                 <button class="btn btn-outline" onclick="openBookingModal()">Nhận Báo Giá Chi Tiết</button>
             </div>
-
         </div>
     </section>
 
-    <!-- THÀNH PHẦN 3: TĂNG CƯỜNG NIỀM TIN (TRUST SIGNALS) -->
     <section class="section" id="trust">
         <div class="trust-section">
             <div class="trust-content-box">
                 <h2>Sự Minh Bạch Tạo Nên Niềm Tin Tuyệt Đối</h2>
-                <p class="trust-text">
-                    Tại Nha khoa DaNang Center, y đức và sự minh bạch con người là kim chỉ nam cho mọi hoạt động điều trị. Hệ thống phòng khám sở hữu cơ sở hạ tầng phòng phẫu thuật vô trùng khép kín biệt lập nhằm loại bỏ hoàn toàn nguy cơ lây nhiễm chéo. 100% đội ngũ Y Bác sĩ đều tốt nghiệp chính quy chuyên khoa Răng Hàm Mặt từ các trường Đại học Y Dược danh tiếng, sở hữu chứng chỉ hành nghề và chứng chỉ cấy ghép Implant, Chỉnh nha nâng cao.
-                </p>
+                <p class="trust-text">Tại Nha khoa DaNang Center, y đức và sự minh bạch con người là kim chỉ nam cho mọi hoạt động điều trị. 100% đội ngũ Y Bác sĩ đều tốt nghiệp chính quy chuyên khoa Răng Hàm Mặt, sở hữu chứng chỉ cấy ghép Implant và Chỉnh nha nâng cao.</p>
                 <div class="badge-container">
-                    <div class="badge-item">📜 Giấy phép hoạt động do Sở Y Tế cấp</div>
-                    <div class="badge-item">🏆 Top 10 Thương Hiệu Nha Khoa Uy Tín</div>
-                    <div class="badge-item">🔬 Hệ thống kiểm soát vô trùng Class B</div>
-                    <div class="badge-item">⭐ 5.0/5.0 Đánh giá thực tế từ Khách hàng</div>
+                    <div class="badge-item">📜 Giấy phép của Sở Y Tế</div>
+                    <div class="badge-item">🏆 Top 10 Thương Hiệu Uy Tín</div>
+                    <div class="badge-item">🔬 Hệ thống vô trùng Class B</div>
+                    <div class="badge-item">⭐ 5.0/5.0 Đánh giá thực tế</div>
                 </div>
             </div>
             <div class="trust-graphic">
@@ -868,196 +388,178 @@
         </div>
     </section>
 
-    <!-- THÀNH PHẦN 3: THƯ VIỆN CA LÂM SÀNG THỰC TẾ (CASE STUDIES) -->
     <section class="section bg-light-sec" id="cases">
-        <h2>Minh Chứng Lâm Sàng Trước - Sau Điều Trị</h2>
-        <p style="text-align: center; max-width: 700px; margin: -10px auto 30px; color: var(--text-muted);">
-            Kết quả điều trị thực tế được lưu trữ trong bệnh án điện tử công khai, minh chứng cho năng lực xử lý các ca khiếm khuyết phức tạp.
-        </p>
+        <h2>Minh Chứng Lâm Sàng Trước - Sau</h2>
+        <p style="text-align: center; max-width: 700px; margin: -10px auto 20px; color: var(--text-muted); font-size: 14px;">(Vuốt sang ngang để xem bảng chi tiết lịch sử ca lâm sàng)</p>
         <div class="table-container">
             <table class="case-table">
                 <thead>
                     <tr>
-                        <th style="width: 120px;">Mã Ca Bệnh</th>
-                        <th>Tình Trạng Lâm Sàng Ban Đầu</th>
-                        <th>Phương Pháp Can Thiệp Áp Dụng</th>
-                        <th>Kết Quả Chức Năng & Thẩm Mỹ</th>
+                        <th style="width: 100px;">Mã Bệnh</th>
+                        <th>Tình Trạng Ban Đầu</th>
+                        <th>Phương Pháp Can Thiệp</th>
+                        <th>Kết Quả Thẩm Mỹ</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td><span class="case-id">KH_0824</span></td>
-                        <td>Răng cửa hàm trên tổn thương cơ học lớn do chấn thương nặng, xuất hiện ổ viêm quanh chóp răng mạn tính, răng xỉn màu sẫm.</td>
-                        <td>Tiến hành nội nha (chữa tủy) buồng triệt để, đặt chốt sợi sợi thủy tinh để gia cố lại thân răng sinh lý và bọc mão toàn sứ Cercon HT cao cấp.</td>
-                        <td>Loại bỏ hoàn toàn ổ nhiễm trùng chân răng, phục hồi hình thể răng đều màu hài hòa tuyệt đối, khôi phục 100% lực cắn xé thức ăn.</td>
+                        <td>Răng cửa tổn thương lớn, viêm chóp răng, xỉn màu sẫm.</td>
+                        <td>Nội nha, đặt chốt sợi và bọc mão toàn sứ Cercon HT.</td>
+                        <td>Loại bỏ viêm, phục hồi hình thể hài hòa, khôi phục lực nhai.</td>
                     </tr>
                     <tr>
                         <td><span class="case-id">KH_1125</span></td>
-                        <td>Mất răng cối lớn số 46 hàm dưới cũ dẫn đến tiêu xương ổ răng theo chiều ngang độ 2, răng đối diện (hàm trên) có xu hướng trồi thụt xuống khoảng mất răng.</td>
-                        <td>Thực hiện ghép xương nhân tạo, cấy trụ Implant NeoBiotech sinh học kết hợp đặt khí cụ đánh lún răng trồi bằng Minivis để tái lập khoảng trống.</td>
-                        <td>Trụ ổn định và tích hợp xương sinh lý hoàn hảo sau 3 tháng phục hình, thiết lập mặt phẳng nhai cơ học chuẩn xác, chấm dứt tình trạng lệch hàm.</td>
+                        <td>Mất răng cối 46, tiêu xương độ 2, răng đối diện trồi xuống.</td>
+                        <td>Ghép xương, cấy Implant NeoBiotech và đánh lún bằng Minivis.</td>
+                        <td>Trụ tích hợp hoàn hảo, lập lại mặt phẳng nhai chuẩn xác.</td>
                     </tr>
                     <tr>
                         <td><span class="case-id">KH_0226</span></td>
-                        <td>Sai lệch khớp cắn dạng xương hạng II (Hô hàm trên thể nặng), răng chen chúc lộn xộn hàm dưới biên độ lớn 5mm gây hạn chế phát âm.</td>
-                        <td>Ứng dụng chỉnh nha toàn diện bằng hệ thống mắc cài kim loại tự buộc thông minh kết hợp nhổ răng cối nhỏ số 4 định hướng điều chỉnh trục răng.</td>
-                        <td>Trả lại tương quan khớp cắn hạng I tối ưu giữa hai hàm, thu gọn tầng mặt dưới tạo góc nghiêng thanh thoát đạt chuẩn đường thẩm mỹ E-line.</td>
+                        <td>Khớp cắn hạng II (Hô hàm trên), răng chen chúc lộn xộn.</td>
+                        <td>Chỉnh nha mắc cài thông minh kết hợp nhổ răng cối nhỏ.</td>
+                        <td>Trả lại khớp cắn hạng I, tạo đường góc nghiêng E-line.</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
 
-    <!-- THÀNH PHẦN 4: TƯƠNG TÁC CHĂM SÓC -->
     <section class="section" style="padding-top:0; padding-bottom:40px;">
         <div class="lead-magnet-banner">
-            <h2>Tải Ngay Cẩm Nang Chăm Sóc Răng Miệng Độc Quyền</h2>
-            <p>Nhận ngay tài liệu y khoa <strong>"5 Mẹo giúp răng trắng sáng tại nhà và những sai lầm nguy hại cần tránh"</strong> biên soạn trực tiếp bởi Hội đồng bác sĩ DaNang Center, kèm mã E-Voucher miễn phí 100% chi phí chụp phim CT Cone Beam trị giá 500.000đ.</p>
+            <h2>Tải Cẩm Nang Chăm Sóc Răng Độc Quyền</h2>
+            <p>Nhận tài liệu "5 Mẹo giúp răng trắng sáng tại nhà" và mã E-Voucher miễn phí chụp phim CT Cone Beam 3D trị giá 500.000đ.</p>
             <form class="lead-form" onsubmit="handleLeadSubmit(event)">
-                <input type="email" class="lead-input" placeholder="Nhập địa chỉ email chính xác của bạn..." required>
-                <button type="submit" class="btn btn-orange" style="padding: 0 35px;">Đăng Ký Nhận Cẩm Nang</button>
+                <input type="email" class="lead-input" placeholder="Nhập địa chỉ email của bạn..." required>
+                <button type="submit" class="btn btn-orange">Đăng Ký Ngay</button>
             </form>
         </div>
     </section>
 
-    <!-- THÀNH PHẦN 2: TỐI ƯU SEO ĐỊA PHƯƠNG -->
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
                 <h3 style="color:white;">Nha Khoa DaNang Center</h3>
-                <div class="footer-info-item">📍 <strong>Địa chỉ trụ sở:</strong> Tòa nhà DaNang Center, Trục đường chính, Trung tâm TP. Đà Nẵng</div>
-                <div class="footer-info-item">📞 <strong>Hotline CSKH:</strong> 1900 xxxx (Hỗ trợ cấp cứu nha khoa 24/7)</div>
-                <div class="footer-info-item">✉️ <strong>Email tiếp nhận:</strong> contact@danangcenter.vn</div>
-                <div class="footer-info-item">⏰ <strong>Thời gian làm việc:</strong> 08:00 - 20:00 (Làm việc cả Thứ 7, Chủ Nhật)</div>
+                <div class="footer-info-item">📍 <strong>Trụ sở:</strong> Đường chính, TP. Đà Nẵng</div>
+                <div class="footer-info-item">📞 <strong>Hotline:</strong> 1900 xxxx (Trực 24/7)</div>
+                <div class="footer-info-item">✉️ <strong>Email:</strong> contact@danangcenter.vn</div>
+                <div class="footer-info-item">⏰ <strong>Làm việc:</strong> 08:00 - 20:00 (Kể cả T7, CN)</div>
             </div>
             <div class="footer-col">
-                <h3>Khu Vực Phục Vụ (Local SEO)</h3>
+                <h3>Khu Vực (Local SEO)</h3>
                 <ul>
-                    <li><a href="#services">Nha khoa uy tín chuyên sâu tại Quận Hải Châu</a></li>
-                    <li><a href="#journey">Trung tâm chỉnh nha mắc cài trả góp tại Quận Thanh Khê</a></li>
-                    <li><a href="#services">Cấy ghép Implant không đau cho người cao tuổi Quận Sơn Trà</a></li>
-                    <li><a href="#cases">Khám răng thẩm mỹ công nghệ cao Quận Ngũ Hành Sơn</a></li>
-                    <li><a href="#services">Nha khoa trẻ em không đau kiểm soát sớm biến chứng Quận Liên Chiểu</a></li>
+                    <li><a href="#services">Nha khoa uy tín Quận Hải Châu</a></li>
+                    <li><a href="#journey">Chỉnh nha mắc cài Quận Thanh Khê</a></li>
+                    <li><a href="#services">Cấy Implant Quận Sơn Trà</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h3>Chính Sách & Minh Bạch</h3>
                 <ul>
-                    <li><a href="#cases">Báo cáo kiểm định ca lâm sàng điều trị thành công</a></li>
-                    <li><a href="#services">Điều khoản cam kết chất lượng văn bản pháp lý</a></li>
-                    <li><a href="#trust">Quy trình xử lý vô trùng dụng cụ y tế tiêu chuẩn</a></li>
-                    <li><a href="#journey">Chính sách bảo hành răng sứ điện tử toàn quốc</a></li>
+                    <li><a href="#cases">Báo cáo kiểm định ca lâm sàng</a></li>
+                    <li><a href="#trust">Quy trình vô trùng y tế</a></li>
+                    <li><a href="#journey">Chính sách bảo hành toàn quốc</a></li>
                 </ul>
             </div>
         </div>
         <div class="copyright-bar">
-            © 2026 Nha Khoa Thẩm Mỹ DaNang Center. Bảo lưu mọi quyền đối với nội dung cấu trúc y khoa trên website. Giấy phép Sở Y Tế số: XX/ĐN-GPHĐ.
+            © 2026 Nha Khoa DaNang Center. Giấy phép Sở Y Tế: XX/ĐN-GPHĐ.
         </div>
     </footer>
 
-    <!-- THÀNH PHẦN 4: TIỆN ÍCH TƯƠNG TÁC NỔI -->
     <div class="floating-controls">
         <div class="float-btn float-booking" onclick="openBookingModal()">ĐẶT<br>LỊCH</div>
         <div class="float-btn float-chat" onclick="toggleChatbot()">CHAT<br>NGAY</div>
     </div>
 
-    <!-- CỬA SỔ CHATBOT KỊCH BẢN ĐIỀU HƯỚNG BỆNH LÝ (FLOW-BASED CHATBOT WINDOW) -->
     <div class="chatbot-window" id="chatbotWindow">
         <div class="chat-header">
-            <span>Trợ lý Nha khoa DaNang Center</span>
+            <span>Trợ lý DaNang Center</span>
             <span style="cursor:pointer;" onclick="toggleChatbot()">✕</span>
         </div>
         <div class="chat-body" id="chatBody">
             <div class="chat-msg msg-bot">
-                Chào bạn! Cảm ơn bạn đã tin tưởng Nha khoa DaNang Center. Để Bác sĩ chuyên khoa hỗ trợ bạn nhanh nhất, vui lòng lựa chọn tình trạng răng hiện tại của mình dưới đây nhé:
+                Chào bạn! Để Bác sĩ hỗ trợ nhanh nhất, vui lòng lựa chọn tình trạng răng của mình dưới đây:
             </div>
             <div class="chat-options" id="chatOptions">
-                <button class="chat-opt-btn" onclick="selectChatFlow(1, 'Răng thưa / Ố vàng / Mẻ vỡ (Muốn làm sứ)')">🦷 Răng thưa / Ố vàng / Mẻ vỡ (Muốn làm sứ)</button>
-                <button class="chat-opt-btn" onclick="selectChatFlow(2, 'Răng hô / Móm / Lệch lạc (Muốn niềng răng)')">😬 Răng hô / Móm / Lệch lạc (Muốn niềng răng)</button>
-                <button class="chat-opt-btn" onclick="selectChatFlow(3, 'Bị mất răng / Răng lung lay (Muốn trồng răng Implant)')">❌ Bị mất răng / Răng lung lay (Muốn trồng răng Implant)</button>
-                <button class="chat-opt-btn" onclick="selectChatFlow(4, 'Đau răng cấp tính / Chảy máu chân răng cần khám gấp')">🏥 Đau răng cấp tính / Chảy máu chân răng</button>
+                <button class="chat-opt-btn" onclick="selectChatFlow(1, 'Răng thưa/Ố vàng/Mẻ vỡ')">🦷 Răng thưa / Ố vàng / Mẻ vỡ</button>
+                <button class="chat-opt-btn" onclick="selectChatFlow(2, 'Răng hô/Móm/Lệch lạc')">😬 Răng hô / Móm / Lệch lạc</button>
+                <button class="chat-opt-btn" onclick="selectChatFlow(3, 'Bị mất răng/Lung lay')">❌ Bị mất răng / Răng lung lay</button>
+                <button class="chat-opt-btn" onclick="selectChatFlow(4, 'Đau răng/Chảy máu')">🏥 Đau răng cấp tính</button>
             </div>
         </div>
     </div>
 
-    <!-- CỬA SỔ ĐẶT LỊCH TỰ ĐỘNG (BOOKING MODAL WINDOW SIMULATION) -->
     <div class="modal-overlay" id="bookingModal">
         <div class="modal-box">
             <span class="close-modal" onclick="closeBookingModal()">✕</span>
-            <h3 style="margin-bottom: 20px; text-align: center; font-size: 20px;">Hệ Thống Đặt Lịch Hẹn Khám Lâm Sàng</h3>
+            <h3 style="margin-bottom: 20px; text-align: center; font-size: 18px;">Đặt Lịch Hẹn Khám</h3>
             <form onsubmit="handleBookingSubmit(event)">
                 <div class="form-group">
                     <label>Họ và tên Khách hàng *</label>
-                    <input type="text" class="form-control" placeholder="Ví dụ: Nguyễn Văn A" required>
+                    <input type="text" class="form-control" placeholder="Nguyễn Văn A" required>
                 </div>
                 <div class="form-group">
-                    <label>Số điện thoại liên hệ (Nhận mã xác nhận lịch) *</label>
-                    <input type="tel" class="form-control" placeholder="Ví dụ: 0905xxxxxx" required>
+                    <label>Số điện thoại liên hệ *</label>
+                    <input type="tel" class="form-control" placeholder="0905xxxxxx" required>
                 </div>
                 <div class="form-group">
-                    <label>Giải pháp chuyên sâu cần tư vấn *</label>
+                    <label>Dịch vụ mong muốn *</label>
                     <select class="form-control" required>
-                        <option value="">-- Chọn dịch vụ mong muốn --</option>
-                        <option value="su">Bọc răng sứ Thẩm mỹ / Dán răng sứ Veneer Ultra-Thin</option>
-                        <option value="implant">Cấy ghép răng Implant kỹ thuật số Flapless</option>
-                        <option value="nieng">Chỉnh nha toàn diện / Niềng khay trong suốt Invisalign</option>
-                        <option value="tongquat">Khám răng định kỳ / Bệnh lý tổng quát</option>
+                        <option value="">-- Chọn dịch vụ --</option>
+                        <option value="su">Bọc răng sứ / Dán sứ Veneer</option>
+                        <option value="implant">Cấy ghép răng Implant</option>
+                        <option value="nieng">Niềng răng / Invisalign</option>
+                        <option value="tongquat">Khám tổng quát</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>Chọn ngày hẹn khám mong muốn</label>
+                    <label>Ngày hẹn mong muốn</label>
                     <input type="date" class="form-control" required>
                 </div>
-                <button type="submit" class="btn btn-primary" style="width:100%; margin-top:10px;">Xác Nhận Đăng Ký Đặt Lịch Hẹn</button>
+                <button type="submit" class="btn btn-primary" style="width:100%; margin-top:10px;">Xác Nhận Đặt Lịch</button>
             </form>
         </div>
     </div>
 
-    <!-- --- KỊCH BẢN INTERACTION JAVASCRIPT ĐIỀU HƯỚNG UX --- -->
     <script>
-        // Điều khiển ẩn/hiện Chatbot chuyên khoa
         function toggleChatbot() {
             const chatWindow = document.getElementById('chatbotWindow');
             chatWindow.style.display = (chatWindow.style.display === 'flex') ? 'none' : 'flex';
         }
 
-        // Xử lý luồng kịch bản hội thoại tự động phân loại bệnh nhân
         function selectChatFlow(flowId, textResponse) {
             const chatBody = document.getElementById('chatBody');
             const chatOptions = document.getElementById('chatOptions');
             
-            // 1. Ghi nhận lựa chọn của người dùng lên màn hình chat
             const userMsg = document.createElement('div');
             userMsg.className = 'chat-msg msg-user';
             userMsg.innerText = textResponse;
             chatBody.appendChild(userMsg);
             
-            // Ẩn bảng chọn ban đầu
             chatOptions.style.display = 'none';
             
-            // 2. Tạo phản hồi tự động tương ứng dựa trên chỉ định y khoa sâu
             setTimeout(() => {
                 const botMsg = document.createElement('div');
                 botMsg.className = 'chat-msg msg-bot';
                 
                 if(flowId === 1) {
-                    botMsg.innerHTML = "Đối với tình trạng răng thưa/ố vàng, DaNang Center hiện đang áp dụng công nghệ dán sứ Veneer Ultra-Thin hạn chế mài răng, bảo tồn 100% tủy sống răng gốc. Bạn vui lòng để lại <strong>Số Điện Thại</strong> trực tiếp tại đây để Bác sĩ Trưởng khoa liên hệ gửi báo giá chi tiết và tư vấn phác đồ răng sứ phù hợp với mình nhé!";
+                    botMsg.innerHTML = "Với tình trạng răng thưa/ố vàng, chúng tôi đang áp dụng dán sứ Veneer bảo tồn tủy. Để lại <strong>SĐT</strong> để Bác sĩ gửi báo giá nhé!";
                 } else if(flowId === 2) {
-                    botMsg.innerHTML = "Dạ, chỉnh nha tại DaNang Center sử dụng công nghệ số hóa mô phỏng ClinCheck biết trước kết quả dịch chuyển răng. Hiện viện đang hỗ trợ chính sách <strong>Trả góp 0% lãi suất</strong>. Bạn có thể để lại số điện thoại để trợ lý đặt lịch hẹn chụp phim CT răng miễn phí cho mình ạ.";
+                    botMsg.innerHTML = "Chỉnh nha sử dụng ClinCheck biết trước kết quả, hỗ trợ <strong>Trả góp 0%</strong>. Để lại SĐT để đặt lịch chụp phim miễn phí ạ.";
                 } else if(flowId === 3) {
-                    botMsg.innerHTML = "Trồng răng Implant kỹ thuật số Flapless tại viện cam kết thực hiện không đau, trụ tích hợp xương nhanh. Bạn vui lòng để lại số điện thoại để chuyên viên đặt lịch ưu thiện thăm khám cùng Thạc sĩ chuyên khoa Implant nhé!";
+                    botMsg.innerHTML = "Trồng Implant Flapless cam kết không đau. Bạn vui lòng để lại SĐT để đặt lịch khám cùng Thạc sĩ nhé!";
                 } else {
-                    botMsg.innerHTML = "Dạ, nếu đang đau răng cấp tính, bạn vui lòng để lại nhanh <strong>Số Điện Thoại</strong> hoặc gọi ngay Hotline để điều phối viên sắp xếp ghế điều trị ưu tiên cấp cứu nha khoa khẩn cấp, giảm đau ngay lập tức cho mình.";
+                    botMsg.innerHTML = "Nếu đang đau cấp tính, bạn vui lòng để lại <strong>SĐT</strong> để chúng tôi xếp ghế ưu tiên cấp cứu ngay.";
                 }
                 
                 chatBody.appendChild(botMsg);
                 
-                // Thêm ô nhập số điện thoại trực tiếp trong luồng chat
                 const inputArea = document.createElement('div');
                 inputArea.style.marginTop = '10px';
                 inputArea.innerHTML = `
                     <div style="display:flex; gap:5px;">
-                        <input type="tel" id="chatPhoneInput" placeholder="Nhập SĐT của bạn..." style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px; font-size:13px;">
+                        <input type="tel" id="chatPhoneInput" placeholder="Nhập SĐT..." style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px; font-size:13px;">
                         <button onclick="submitChatPhone()" style="background:var(--primary); color:white; border:none; padding:0 12px; border-radius:4px; font-size:12px; font-weight:bold; cursor:pointer;">Gửi</button>
                     </div>
                 `;
@@ -1069,24 +571,22 @@
         function submitChatPhone() {
             const phone = document.getElementById('chatPhoneInput').value;
             if(!phone) return alert('Vui lòng nhập số điện thoại');
-            alert('Hệ thống DaNang Center đã ghi nhận số điện thoại: ' + phone + '. Bác sĩ chuyên khoa sẽ liên hệ tư vấn lâm sàng trực tiếp trong vòng 15 phút tới.');
+            alert('Đã ghi nhận số: ' + phone + '. Bác sĩ sẽ liên hệ sớm nhất.');
             toggleChatbot();
         }
 
-        // Điều khiển ẩn/hiện Modal Đặt lịch tự động
         function openBookingModal() { document.getElementById('bookingModal').style.display = 'flex'; }
         function closeBookingModal() { document.getElementById('bookingModal').style.display = 'none'; }
 
-        // Ghi nhận dữ liệu chuyển đổi nâng cao
         function handleBookingSubmit(e) {
             e.preventDefault();
-            alert('Chúc mừng bạn đã đăng ký lịch hẹn thành công trên hệ thống tự động! Trợ lý y tế sẽ gọi điện xác nhận chính xác khung giờ trống của bác sĩ chuyên khoa và gửi mã lịch hẹn qua SMS cho bạn ngay.');
+            alert('Đặt lịch thành công! Trợ lý y tế sẽ gọi điện xác nhận khung giờ.');
             closeBookingModal();
         }
 
         function handleLeadSubmit(e) {
             e.preventDefault();
-            alert('Hệ thống đã gửi bộ tài liệu độc quyền và Mã voucher giảm giá vào email của bạn. Vui lòng kiểm tra kỹ cả hòm thư đến và thư rác (Spam).');
+            alert('Đã gửi tài liệu và Voucher vào email của bạn.');
         }
     </script>
 </body>

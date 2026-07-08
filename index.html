@@ -829,6 +829,7 @@
         @media (max-width: 768px) {
             /* HEADER */
             header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -841,13 +842,15 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background: white;
+    background: #1a1a1a;
     flex-direction: column;
     z-index: 999;
 }
 
-nav.active {
-    display: flex;
+nav a {
+    display: block;
+    padding: 16px;
+    border-bottom: 1px solid rgba(255,255,255,.08);
 }
             /* HERO */
             .hero { 

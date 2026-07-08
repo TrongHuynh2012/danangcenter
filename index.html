@@ -828,38 +828,27 @@
         
         @media (max-width: 768px) {
             /* HEADER */
-            header { 
-                padding: 12px 15px;
-                flex-wrap: wrap;
-            }
-            .nav-toggle {
-                display: block;
-                flex: 0 0 auto;
-                order: 3;
-            }
-            nav { 
-                display: none;
-                order: 4;
-                width: 100%;
-            }
-            nav.active {
-                display: flex;
-                flex-direction: column;
-                position: static;
-                background: white;
-                padding: 15px;
-                box-shadow: none;
-            }
-            nav a {
-                padding: 10px 0;
-            }
-            header .btn {
-                order: 2;
-                margin-left: 10px;
-                padding: 10px 15px;
-                font-size: 14px;
-            }
-            
+            header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 12px 15px;
+}
+            nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    z-index: 999;
+}
+
+nav.active {
+    display: flex;
+}
             /* HERO */
             .hero { 
                 flex-direction: column; 
